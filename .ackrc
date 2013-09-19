@@ -4,5 +4,6 @@
 --type-set=erb=.erb
 --type-set=haml=.haml
 
-# For Nette
---type-set=phtml=.phtml
+--sort-files
+
+--pager=less -FRX
