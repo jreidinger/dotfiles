@@ -35,7 +35,7 @@ set smartindent  " Do smart autoindenting when staring a new line
 set expandtab    " Insert spaces instead of <Tab>
 set smarttab     " A <BS> will delete a 'shiftwidth' worth of spaces at the
                  " start of the line
-set tabstop=2    " Number of spaces that a <Tab> counts for
+set tabstop=8    " Number of spaces that a <Tab> counts for
 set shiftwidth=2 " Number of spaces to use for each step of (auto)indent
 
 " Select just pasted text
@@ -68,6 +68,7 @@ nmap <leader>vV :exec "grep '\\b" . expand("<cword>") . "\\b'"<CR>
 
 " Git commit messages
 autocmd FileType gitcommit setlocal textwidth=72
+autocmd BufRead Makefile* setlocal noexpandtab
 
 " ===== Plugins =====
 
