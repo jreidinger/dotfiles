@@ -28,7 +28,6 @@ set directory=/tmp  " Set central directory for swap files
 " ===== Editing =====
 
 set nowrap       " Disable line wrapping
-set textwidth=80 " Set maximum width of text being inserted
 
 set autoindent   " Copy indent from current line when starting a new line
 set smartindent  " Do smart autoindenting when staring a new line
