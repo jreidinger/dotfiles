@@ -4,6 +4,7 @@ export EDITOR=/usr/bin/vim
 test -s ~/.alias && . ~/.alias || true
 
 alias isc="osc -A https://api.suse.de"
+alias gitpm="git checkout master; git pull"
 
 # history related stuff
 export HISTCONTROL=ignoreboth
