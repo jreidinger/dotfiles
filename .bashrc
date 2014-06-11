@@ -5,6 +5,7 @@ test -s ~/.alias && . ~/.alias || true
 
 alias isc="osc -A https://api.suse.de"
 alias gitpm="git checkout master; git pull"
+alias gitclean="git checkout master && git branch --merged | grep -v master$ | xargs -n 1 git branch -d"
 
 # history related stuff
 export HISTCONTROL=ignoreboth
