@@ -69,6 +69,10 @@ nmap <leader>vV :exec "grep '\\b" . expand("<cword>") . "\\b'"<CR>
 autocmd FileType gitcommit setlocal textwidth=72
 autocmd BufRead Makefile* setlocal noexpandtab
 
+" SUSE changes files
+autocmd BufRead *.changes.vctmp.* setf changes
+autocmd FileType changes setlocal spell spelllang=en_us
+
 " ===== Plugins =====
 
 " NERD tree
