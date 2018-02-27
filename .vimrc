@@ -72,6 +72,8 @@ autocmd BufRead Makefile* setlocal noexpandtab
 " SUSE changes files
 autocmd BufRead *.changes.vctmp.* setf changes
 autocmd FileType changes setlocal spell spelllang=en_us
+highlight clear SpellBad
+highlight SpellBad ctermfg=red guifg=red
 
 " ===== Plugins =====
 
