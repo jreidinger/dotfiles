@@ -1,6 +1,7 @@
 [user]
 	name = Josef Reidinger
 	email = jreidinger@suse.cz
+	signingkey = B7BBBD7F9AE60AE42D3B39275795B05DBC562F48
 
 [core]
 	pager = less -FRX
@@ -18,3 +19,5 @@
 
 [push]
 	default = tracking
+[commit]
+	gpgsign = true
